@@ -3,6 +3,7 @@ import './assets/css/base/base.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import Cabecalho from './components/Cabecalho';
+import Categoria from './components/Categoria';
 import Home from './paginas/Home';
 import Pagina404 from './paginas/Pagina404';
 import Post from './paginas/Post';
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route path="/sobre">
           <Sobre />
+        </Route>{' '}
+        <Route path="/categoria/:id">
+          <Categoria />
         </Route>
         <Route path="/posts/:id">
           <Post />

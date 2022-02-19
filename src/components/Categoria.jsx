@@ -8,9 +8,8 @@ import React from 'react';
 
 const Categoria = () => {
   const { id } = useParams();
+  console.log(id);
   const { path } = useRouteMatch();
-
-  console.log('CATEGORIA');
 
   return (
     <>
